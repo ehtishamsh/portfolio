@@ -1,12 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.hero {
-  background: radial-gradient(
-    140% 107.13% at 50% 10%,
-    transparent 37.41%,
-    #63e 69.27%,
-    #fff 100%
-  );
-}
