@@ -35,7 +35,7 @@ function Cursor() {
     };
   }, []);
   return (
-    <div id="cursor" className="cursor max-sm:">
+    <div id="cursor" className="cursor max-md:hidden">
       <div className="rings">
         <div></div>
       </div>
