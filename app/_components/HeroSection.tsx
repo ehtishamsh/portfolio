@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 function HeroSection() {
   return (
-    <div className="h-[calc(100vh-80px)] w-full flex justify-center items-center p-7 max-sm:p-3 mt-16">
+    <div className="h-[calc(100vh-80px)] max-sm:mt-1 w-full flex justify-center items-center p-7 max-sm:p-3 mt-16">
       <div className="w-full h-full relative">
         <div className="w-full h-full flex flex-col justify-center items-center text-black">
           <h1 className="text-[5.5vw] max-sm:text-[7.5vw] mb-5 z-30">
@@ -52,7 +52,7 @@ function HeroSection() {
             </a>
           </div>
         </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 hero -translate-y-1/2 w-[65%] h-[90%] max-sm:h-[60%] max-md:w-full max-md:h-[85%] max-lg:w-[90%] max-lg:h-[85%]  bg-white -z-10"></div>
+        <div className="absolute top-1/2  left-1/2 transform -translate-x-1/2 hero -translate-y-1/2 w-[65%] h-[90%] max-sm:h-[60%] max-md:w-full max-md:h-[85%] max-lg:w-[90%] max-lg:h-[85%]  bg-white -z-10"></div>
       </div>
     </div>
   );
