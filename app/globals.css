@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  animation-name: animate;
+  animation-duration: 5s;
+  transition: all 1s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.dev {
+  -webkit-text-stroke: 1px black; /* WebKit browsers */
+  text-stroke: 1px black; /* Standard syntax */
+  /* Text color */
+}
