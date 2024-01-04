@@ -1,11 +1,12 @@
-import Cursor from "./_components/Cursor";
 import HeroSection from "./_components/HeroSection";
+import { PageWrapper } from "./pageWrapper";
 
 export default function Home() {
   return (
     <div className="relative">
-      <HeroSection />
-      <Cursor />
+      <PageWrapper>
+        <HeroSection />
+      </PageWrapper>
     </div>
   );
 }
