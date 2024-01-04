@@ -2,10 +2,12 @@
 import React, { useEffect, useState } from "react";
 
 function Cursor() {
+  const [visable, setVisable] = useState(false);
   useEffect(() => {
     const cursor: HTMLDivElement | null = document.querySelector(".cursor");
 
     const handleMouseMove = (e: MouseEvent) => {
+      setVisable(true);
       const rings: NodeListOf<HTMLDivElement> =
         document.querySelectorAll(".rings");
       rings.forEach((ring, index) => {
@@ -35,7 +37,10 @@ function Cursor() {
     };
   }, []);
   return (
-    <div id="cursor" className="cursor max-md:hidden">
+    <div
+      id="cursor"
+      className={`cursor max-md:hidden ${visable ? "" : "hidden"}`}
+    >
       <div className="rings">
         <div></div>
       </div>
