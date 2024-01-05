@@ -1,4 +1,6 @@
+import AboutMe from "./_components/AboutMe";
 import HeroSection from "./_components/HeroSection";
+import MySkills from "./_components/MySkills";
 import { PageWrapper } from "./pageWrapper";
 
 export default function Home() {
@@ -7,6 +9,7 @@ export default function Home() {
       <PageWrapper>
         <HeroSection />
       </PageWrapper>
+      <MySkills />
     </div>
   );
 }
