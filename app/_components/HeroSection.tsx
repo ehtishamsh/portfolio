@@ -14,7 +14,7 @@ function HeroSection() {
               Hi, I am <span className="font-bold">Ehtisham.</span>
             </h1>
           </Reveal>
-          <Reveal>
+          <Reveal delayTime={0.35}>
             <p className="text-[2vw] max-sm:text-[4.5vw] z-30  m-0">
               Full Stack Web <span className="font-bold">Developer</span>
             </p>
@@ -24,8 +24,8 @@ function HeroSection() {
               href="#"
               className="p-3 bg-white col-span-2 border-2 flex justify-center max-md:p-2 max-lg:col-span-4 items-center gap-3  border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
-              <Reveal>Contact me</Reveal>
-              <Reveal>
+              <Reveal delayTime={0.4}>Contact me</Reveal>
+              <Reveal delayTime={0.4}>
                 <BsArrowRight />
               </Reveal>
             </a>
@@ -33,8 +33,8 @@ function HeroSection() {
               href="#"
               className="p-3 bg-white border-2 col-span-2 flex justify-center max-md:p-2 max-lg:col-span-4 items-center gap-3  border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
-              <Reveal>Download CV</Reveal>
-              <Reveal>
+              <Reveal delayTime={0.4}>Download CV</Reveal>
+              <Reveal delayTime={0.4}>
                 <BsDownload />
               </Reveal>
             </a>
@@ -42,7 +42,7 @@ function HeroSection() {
               href="#"
               className="p-3 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
-              <Reveal>
+              <Reveal delayTime={0.4}>
                 <FaFacebook className="z-30 text-2xl max-md:text-xl" />
               </Reveal>
             </a>
@@ -50,7 +50,7 @@ function HeroSection() {
               href="#"
               className="p-3 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
-              <Reveal>
+              <Reveal delayTime={0.4}>
                 <FaGithub className="z-30 text-2xl max-md:text-xl" />
               </Reveal>
             </a>
@@ -58,7 +58,7 @@ function HeroSection() {
               href="#"
               className="p-3 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
-              <Reveal>
+              <Reveal delayTime={0.4}>
                 <FaLinkedin className="z-30 text-2xl max-md:text-xl" />
               </Reveal>
             </a>
@@ -66,12 +66,13 @@ function HeroSection() {
               href="#"
               className="p-3 bg-white border-2  border-black cursor-pointer max-md:p-2 justify-center items-center flex hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
-              <Reveal>
+              <Reveal delayTime={0.4}>
                 <FaTwitter className="z-30 text-2xl max-md:text-xl" />
               </Reveal>
             </a>
           </div>
         </div>
+
         <div className="absolute top-1/2  left-1/2 transform -translate-x-1/2 hero -translate-y-1/2 w-[65%] h-[90%] max-sm:h-[75%] max-md:w-full max-md:h-[85%] max-lg:w-[90%] max-lg:h-[85%]  bg-white -z-10"></div>
       </div>
     </div>

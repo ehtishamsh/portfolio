@@ -4,9 +4,11 @@ import { useAnimation, motion, useInView } from "framer-motion";
 export const Reveal2 = ({
   children,
   width = "fit-content",
+  center = false,
 }: {
   children: React.ReactNode;
   width?: "fit-content" | "100%";
+  center?: boolean;
 }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -16,7 +18,6 @@ export const Reveal2 = ({
       mediaControlls.start("visible");
     }
   }, [inView]);
-  console.log(inView);
   return (
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
       <motion.div
@@ -26,6 +27,11 @@ export const Reveal2 = ({
         }}
         initial="hidden"
         animate={mediaControlls}
+        className={
+          width === "fit-content"
+            ? ""
+            : "bg-transparent  flex justify-center items-center"
+        }
         transition={{ delay: 0.25, ease: "easeInOut", duration: 0.5 }}
       >
         {children}
