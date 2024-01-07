@@ -5,6 +5,7 @@ import Skills from "./utils/Skills";
 import { Reveal2 } from "./_animation/Revel2";
 import Lottie from "lottie-react";
 import SkillsLottie from "./utils/skillAnimation.json";
+import Arrow from "./utils/Arrow.json";
 import Link from "next/link";
 function MySkills() {
   return (
@@ -14,10 +15,17 @@ function MySkills() {
           My <span className="font-extrabold">Skills</span>
         </h1>
       </Reveal>
-      <div className="w-full flex justify-center items-center">
-        <div className="w-2/5">
-          <Reveal delayTime={2}>
+      <div className="w-full flex justify-center items-center flex-col gap-4">
+        <div className="w-2/3 mt-40 max-sm:w-3/4">
+          <div className="flex justify-center items-center">
             <Lottie animationData={SkillsLottie} />
+          </div>
+        </div>
+        <div className="w-36 mb-32">
+          <Reveal delayTime={1}>
+            <div className="flex justify-center items-center">
+              <Lottie animationData={Arrow} />
+            </div>
           </Reveal>
         </div>
       </div>

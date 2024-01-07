@@ -22,20 +22,28 @@ function HeroSection() {
           <div className="grid grid-cols-4 gap-6 max-sm:gap-2 justify-between pt-5 max-xl:pt-5 max-lg:grid max-lg:grid-cols-4">
             <a
               href="#"
-              className="rounded-xl border-2 border-black bg-white p-3 gap-2 text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
+              className="rounded-xl border-2 border-black bg-white p-3 gap-2 text-black max-md:p-2 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
             >
-              <Reveal delayTime={0.4}>Contact me</Reveal>
               <Reveal delayTime={0.4}>
-                <BsArrowRight />
+                <p className="z-30 text-2xl max-md:text-xl max-sm:text-base">
+                  Contact me
+                </p>
+              </Reveal>
+              <Reveal delayTime={0.4}>
+                <BsArrowRight className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
               </Reveal>
             </a>
             <a
               href="#"
-              className="rounded-xl border-2 border-black bg-white p-3 gap-2 text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
+              className="rounded-xl border-2 border-black bg-white p-3 gap-2 max-md:p-2 text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
             >
-              <Reveal delayTime={0.4}>Download CV</Reveal>
               <Reveal delayTime={0.4}>
-                <BsDownload />
+                <p className="z-30 text-2xl max-md:text-xl max-sm:text-base">
+                  Download CV
+                </p>
+              </Reveal>
+              <Reveal delayTime={0.4}>
+                <BsDownload className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
               </Reveal>
             </a>
             <a
