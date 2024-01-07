@@ -73,7 +73,7 @@ export default {
     {
       name: "Node.js",
       id: 11,
-      iconName: "SiNodeDotJs",
+      iconName: "SiNodedotjs",
       history:
         "Node.js, created by Ryan Dahl in 2009, is a server-side JavaScript runtime. It allows developers to execute JavaScript code outside the browser, enabling server-side scripting and building scalable network applications.",
     },

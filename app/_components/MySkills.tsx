@@ -6,10 +6,9 @@ import { Reveal2 } from "./_animation/Revel2";
 import Lottie from "lottie-react";
 import SkillsLottie from "./utils/skillAnimation.json";
 import Link from "next/link";
-import Hover from "./_animation/Hover";
 function MySkills() {
   return (
-    <div className="w-full p-16 flex justify-center items-center flex-col">
+    <div className="w-full p-16 flex justify-center items-center flex-col max-md:p-3 max-sm:p-2">
       <Reveal delayTime={0.4}>
         <h1 className="text-5xl text-white">
           My <span className="font-extrabold">Skills</span>
