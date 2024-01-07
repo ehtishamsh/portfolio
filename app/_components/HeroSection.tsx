@@ -19,63 +19,59 @@ function HeroSection() {
               Full Stack Web <span className="font-bold">Developer</span>
             </p>
           </Reveal>
-          <div className="grid grid-cols-4 gap-6 max-sm:gap-2 justify-between pt-5 max-xl:pt-5 max-lg:grid max-lg:grid-cols-4">
+          <div className="grid grid-cols-4 gap-6 max-sm:gap-2 max-sm:px-4 justify-between pt-5 max-xl:pt-5 max-lg:grid max-lg:grid-cols-4">
             <a
               href="#"
-              className="rounded-xl border-2 border-black bg-white p-3 gap-2 text-black max-md:p-2 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
+              className="rounded-xl border-2 border-black bg-white p-3 gap-2 text-black max-md:p-2 max-sm:gap-1 max-sm:text-xs   transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
             >
               <Reveal delayTime={0.4}>
-                <p className="z-30 text-2xl max-md:text-xl max-sm:text-base">
-                  Contact me
-                </p>
+                <p className="z-30 ">Contact me</p>
               </Reveal>
               <Reveal delayTime={0.4}>
-                <BsArrowRight className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
+                <BsArrowRight className="z-30 text-2xl max-md:text-xl max-sm:text-sm" />
               </Reveal>
             </a>
             <a
               href="#"
-              className="rounded-xl border-2 border-black bg-white p-3 gap-2 max-md:p-2 text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
+              className="rounded-xl border-2 border-black bg-white p-3 gap-2 max-md:p-2 max-sm:gap-1 max-sm:text-xs  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2  flex justify-center items-center"
             >
               <Reveal delayTime={0.4}>
-                <p className="z-30 text-2xl max-md:text-xl max-sm:text-base">
-                  Download CV
-                </p>
+                <p className="z-30   ">Download CV</p>
               </Reveal>
               <Reveal delayTime={0.4}>
-                <BsDownload className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
+                <BsDownload className="z-30 text-2xl max-md:text-xl max-sm:text-sm" />
               </Reveal>
             </a>
             <a
               href="#"
-              className="p-3 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
+              className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
-                <FaFacebook className="z-30 text-2xl max-md:text-xl" />
+                <FaFacebook className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
               </Reveal>
             </a>
             <a
               href="#"
-              className="p-3 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
+              className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
-                <FaGithub className="z-30 text-2xl max-md:text-xl" />
+                <FaGithub className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
               </Reveal>
             </a>
             <a
               href="#"
-              className="p-3 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
+              className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
-                <FaLinkedin className="z-30 text-2xl max-md:text-xl" />
+                <FaLinkedin className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
               </Reveal>
             </a>
             <a
               href="#"
-              className="p-3 bg-white border-2  border-black cursor-pointer max-md:p-2 justify-center items-center flex hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
+              className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2  border-black cursor-pointer max-md:p-2 justify-center items-center flex hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
-                <FaTwitter className="z-30 text-2xl max-md:text-xl" />
+                <FaTwitter className="z-30 text-2xl max-md:text-xl max-sm:text-base" />
               </Reveal>
             </a>
           </div>
