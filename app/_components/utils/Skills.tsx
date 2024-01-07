@@ -48,10 +48,10 @@ function Skills() {
         whileHover="whileHover"
         className=" relative flex items-center w-1/5  max-md:w-1/4 max-sm:w-1/3  justify-center flex-col gap-6 text-xl bg-black border p-6 border-white hover:bg-white text-white hover:text-black"
       >
-        <motion.span className="text-5xl">
+        <motion.span className="text-5xl max-sm:text-3xl">
           {renderIcon(item.iconName)}
         </motion.span>
-        <motion.span>{item.name}</motion.span>
+        <motion.span className="max-sm:text-xs">{item.name}</motion.span>
         <motion.div
           style={{
             translateX: "0%",
