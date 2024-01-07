@@ -17,14 +17,14 @@ function MySkills() {
       </Reveal>
       <div className="w-full flex justify-center items-center flex-col gap-4">
         <div className="w-2/3 mt-40 max-sm:w-3/4">
-          <Reveal delayTime={1}>
+          <Reveal delayTime={1} width="100%">
             <div className="flex justify-center items-center">
               <Lottie animationData={SkillsLottie} />
             </div>
           </Reveal>
         </div>
         <div className="w-36 mb-32">
-          <Reveal delayTime={1.5}>
+          <Reveal delayTime={1}>
             <div className="flex justify-center items-center">
               <Lottie animationData={Arrow} />
             </div>
