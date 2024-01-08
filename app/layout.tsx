@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-black cursor-none pointer-events-auto ">
+    <html
+      lang="en"
+      className="bg-black cursor-none pointer-events-auto scroll-smooth scroll-pt-8"
+    >
       <body className={sora.className}>
         <Header />
         {children}

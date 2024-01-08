@@ -1,36 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as Icons from "react-icons/si";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Datas from "../Data";
+import { Reveal } from "../_animation/Reveal";
 function Skills() {
   const [data, setData] = useState(Datas.data);
-  const ref = useRef(null);
-  const [click, setClick] = useState(false);
-
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  const mouseXSpring = useSpring(x);
-  const mouseYSpring = useSpring(y);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (ref.current) {
-      const rect = (ref.current as HTMLDivElement).getBoundingClientRect();
-
-      const width = rect.width;
-      const height = rect.height;
-
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-
-      const xPct = mouseX / width - 0.5;
-      const yPct = mouseY / height - 0.5;
-
-      x.set(xPct);
-      y.set(yPct);
-    }
-  };
-
   const renderIcon = (iconName: string) => {
     const IconComponent = Icons[iconName as keyof typeof Icons];
     if (IconComponent) {
@@ -42,19 +16,16 @@ function Skills() {
   const createElement = data.map((item) => {
     return (
       <motion.div
-        ref={ref}
-        onMouseMove={handleMouseMove}
         initial="initial"
         key={item.id}
         whileHover="whileHover"
-        whileTap="whileTap"
         className=" relative flex items-center w-1/5  max-md:w-1/4 max-sm:w-full  justify-center  select-none flex-col gap-6 text-xl bg-black border p-6 border-white hover:bg-white text-white hover:text-black"
       >
         <motion.span className="text-5xl max-sm:text-3xl">
-          {renderIcon(item.iconName)}
+          <Reveal delayTime={0.5}>{renderIcon(item.iconName)}</Reveal>
         </motion.span>
         <motion.span className="max-sm:text-xs select-none">
-          {item.name}
+          <Reveal delayTime={0.5}>{item.name}</Reveal>
         </motion.span>
         <motion.div
           style={{
@@ -62,11 +33,10 @@ function Skills() {
             translateY: "0%",
           }}
           variants={{
-            initial: { scale: 0, rotate: "0deg" },
-            whileHover: { scale: 1.1, rotate: "0deg" },
-            whileTap: { scale: 1.1, rotate: "0deg" },
+            initial: { scale: 0 },
+            whileHover: { scale: 1.05 },
           }}
-          transition={{ type: "spring" }}
+          transition={{ type: "spring", duration: 1.6, bounce: 0.5 }}
           className="absolute z-30 h-64 w-full p-2 overflow-hidden rounded-lg  select-none bg-white border-dashed border-2 border-slate-700 text-black"
         >
           <div style={{ maxWidth: "100%", wordWrap: "break-word" }}>
