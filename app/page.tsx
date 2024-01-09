@@ -10,6 +10,7 @@ export default function Home() {
         <HeroSection />
       </PageWrapper>
       <MySkills />
+      <AboutMe />
     </div>
   );
 }
