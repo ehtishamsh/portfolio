@@ -52,8 +52,8 @@ function AboutMe() {
             challenges and learning the latest technologies along the way. Now,
             in my early thirties, 7 years after starting my web development
             journey, I'm building cutting-edge web applications using modern
-            technologies such as Next.js, TypeScript, Nestjs, Tailwindcss,
-            Supabase and much more.
+            technologies such as react.js,Next.js, TypeScript, Tailwindcss and
+            much more.
           </p>
         </div>
       </div>
