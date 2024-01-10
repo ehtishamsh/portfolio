@@ -10,6 +10,7 @@
   animation-timing-function: linear;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 }
+
 @keyframes animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -21,6 +22,7 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
 .dev {
   -webkit-text-stroke: 1px black; /* WebKit browsers */
   text-stroke: 1px black; /* Standard syntax */
@@ -83,4 +85,44 @@
 }
 a {
   cursor: none !important;
+}
+
+.custom-shape-divider-top-1704856316 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1704856316 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 173px;
+}
+
+.custom-shape-divider-top-1704856316 .shape-fill {
+  fill: #000000;
+}
+.custom-shape-divider-bottom-1704855364 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704855364 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 173px;
+}
+
+.custom-shape-divider-bottom-1704855364 .shape-fill {
+  fill: #000000;
 }
