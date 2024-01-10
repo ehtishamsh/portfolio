@@ -70,7 +70,7 @@ function AboutMe() {
           ></path>
         </svg>
       </div>
-      <div className="mb-20"></div>
+      <div className="mb-20">&apos;</div>
     </div>
   );
 }
