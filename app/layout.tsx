@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-black cursor-none pointer-events-auto scroll-smooth scroll-pt-2"
+      className="bg-black cursor-none scroll-smooth scroll-pt-2 select-none "
     >
       <body className={sora.className}>
         <Header />
