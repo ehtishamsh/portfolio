@@ -9,7 +9,7 @@ function MySkills() {
   return (
     <div
       id="skills"
-      className="w-full p-16 mt-20 flex justify-center items-center flex-col max-md:p-3 max-sm:p-2"
+      className="w-full p-16 mt-20 max-sm:mt-8 flex justify-center items-center flex-col max-md:p-3 max-sm:p-2"
     >
       <Reveal delayTime={0.4}>
         <h1 className="text-5xl text-white">

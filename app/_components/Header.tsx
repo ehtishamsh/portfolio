@@ -38,7 +38,7 @@ function Header() {
         <nav className="border border-gray-400 bg-black/65 backdrop-blur-sm rounded-3xl  text-gray-950 flex items-center w-3/5 max-sm:w-full transition-all duration-500">
           <Link
             href={"/"}
-            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3 font-bold text-center px-2 ${
+            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
               hash === "" && path === "/"
                 ? "text-black bg-white hover:text-gray-500"
                 : "text-white hover:text-gray-300"
@@ -50,7 +50,7 @@ function Header() {
           </Link>
           <Link
             href={"/#skills"}
-            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3 font-bold text-center px-2 ${
+            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
               hash === "skills"
                 ? "text-black bg-white hover:text-gray-500"
                 : "text-white hover:text-gray-300"
@@ -62,7 +62,7 @@ function Header() {
           </Link>
           <Link
             href={"/#about"}
-            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3 font-bold text-center px-2 ${
+            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
               hash === "about"
                 ? "text-black bg-white hover:text-gray-500"
                 : "text-white hover:text-gray-300"
@@ -74,7 +74,7 @@ function Header() {
           </Link>
           <Link
             href={"/contact"}
-            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3 font-bold text-center px-2 ${
+            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
               hash === "" && path === "/contact"
                 ? "text-black bg-white hover:text-gray-500"
                 : "text-white hover:text-gray-300"
@@ -82,18 +82,6 @@ function Header() {
           >
             <Reveal center={true} delayTime={0.3} width="100%">
               CONTACT
-            </Reveal>
-          </Link>
-          <Link
-            href={"/about"}
-            className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3 font-bold text-center px-2 ${
-              path === "/about"
-                ? "text-black bg-white hover:text-gray-500"
-                : "text-white hover:text-gray-300"
-            }`}
-          >
-            <Reveal center={true} width="100%" delayTime={0.35}>
-              ABOUT
             </Reveal>
           </Link>
         </nav>
