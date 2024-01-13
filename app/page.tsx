@@ -5,6 +5,7 @@ import HeroSection from "./_components/HeroSection";
 import MySkills from "./_components/MySkills";
 import { PageWrapper } from "./pageWrapper";
 import Preloader from "./_components/_animation/Preloader";
+import Projects from "./_components/Projects";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +28,7 @@ export default function Home() {
           </PageWrapper>
           <MySkills />
           <AboutMe />
+          <Projects />
         </div>
       )}
     </>

@@ -2,7 +2,6 @@
 import React from "react";
 import { BsDownload, BsArrowRight } from "react-icons/bs";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { Reveal } from "./_animation/Reveal";
 function HeroSection() {
   return (
