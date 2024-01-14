@@ -14,10 +14,10 @@ function Projects() {
           <h1 className="text-4xl font-bold">01</h1>
           <h1 className="text-3xl font-bold">Crypto Screener Application</h1>
           <p className="text-base text-gray-700">
-            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+            {`   I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to specimen book.
+            galley of type and scrambled it to specimen book.`}
           </p>
         </div>
       </div>
@@ -29,7 +29,7 @@ function Projects() {
           <h1 className="text-4xl font-bold">01</h1>
           <h1 className="text-3xl font-bold">Crypto Screener Application</h1>
           <p className="text-base text-gray-700">
-            {`      I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+            {`I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text ever since the 1500s, when an unknown printer took a
               galley of type and scrambled it to specimen book.`}
@@ -44,7 +44,7 @@ function Projects() {
           <h1 className="text-4xl font-bold">01</h1>
           <h1 className="text-3xl font-bold">Crypto Screener Application</h1>
           <p className="text-base text-gray-700">
-            {`   I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+            {`I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to specimen book.`}
