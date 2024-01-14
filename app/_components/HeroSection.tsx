@@ -5,16 +5,16 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Reveal } from "./_animation/Reveal";
 function HeroSection() {
   return (
-    <div className="h-[calc(100vh-80px)] max-sm:mt-0 w-full flex justify-center items-center p-7 max-sm:p-3 mt-16 mb-9 max-sm:mb-0">
+    <div className="h-[calc(100vh-80px)] max-sm:mt-0 w-full flex justify-center items-center p-7 max-sm:p-3 mt-20 mb-9 max-sm:mb-0">
       <div className="w-full h-full relative">
         <div className="w-full h-full flex flex-col justify-center items-center text-black">
           <Reveal>
-            <h1 className="text-[5vw] max-sm:text-[7.5vw] mb-5 m-0 z-30 max-sm:mb-2">
+            <h1 className="text-[5vw] max-sm:text-[7.5vw] mb-5 m-0 z-30 max-sm:mb-2 name">
               Hi, I am <span className="font-bold">Ehtisham.</span>
             </h1>
           </Reveal>
           <Reveal delayTime={0.35}>
-            <p className="text-[2vw] max-sm:text-[4.5vw] z-30  m-0">
+            <p className="text-[2vw] max-sm:text-[4.5vw] z-30  m-0 prof">
               Full Stack Web <span className="font-bold">Developer</span>
             </p>
           </Reveal>
@@ -76,7 +76,7 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="absolute top-1/2 max-xxxxs:h-[60%]  left-1/2 transform -translate-x-1/2 hero -translate-y-1/2 w-[65%] h-[90%] max-sm:h-[75%] max-md:w-full max-md:h-[85%] max-lg:w-[90%] max-lg:h-[85%]  bg-white -z-10"></div>
+        <div className="absolute blob top-1/2 max-xxxxs:h-[60%] left-1/2 transform -translate-x-1/2 hero -translate-y-1/2 w-[65%] h-[90%] max-sm:h-[75%] max-md:w-full max-md:h-[85%] max-lg:w-[90%] max-lg:h-[85%]  bg-white -z-10"></div>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
-import Header from "./_components/Header";
+
 import Cursor from "./_components/Cursor";
+import Masterlayout from "./_components/layout";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -22,8 +23,7 @@ export default function RootLayout({
       className="bg-black !scroll-smooth cursor-none scroll-pt-2 select-none "
     >
       <body className={sora.className}>
-        <Header />
-        {children}
+        <Masterlayout {...{ children }} />
         <Cursor />
       </body>
     </html>

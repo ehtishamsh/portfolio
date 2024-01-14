@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Blob media queary */
+
+@media not all and (max-height: 1350px) {
+  .blob {
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .cursor {
+    display: none;
+  }
+  .name {
+    font-size: 64px !important;
+  }
+  .prof {
+    font-size: 36px !important;
+  }
+}
+
 /* Styles for the entire scrollbar */
 ::-webkit-scrollbar {
   width: 8px; /* Set the width of the scrollbar */

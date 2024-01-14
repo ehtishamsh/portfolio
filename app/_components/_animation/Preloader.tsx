@@ -9,7 +9,7 @@ const Preloader: React.FC = () => {
       initial={{ opacity: 1, y: 0 }}
       animate={{ opacity: 0, y: "-100vh" }}
       exit={{ display: "none", y: "-100vh" }}
-      transition={{ duration: 2.5, delay: 3 }}
+      transition={{ delay: 3, ease: "easeInOut", duration: 4 }}
       className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-[99999] bg-black text-white"
     >
       <Lottie animationData={Hi} loop={false} />
