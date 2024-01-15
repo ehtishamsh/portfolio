@@ -27,6 +27,11 @@ function Header() {
     }
   });
   useEffect(() => {
+    if ((path === "/" && hash === "") || hash != "") {
+      setButton(false);
+    }
+  }, [hash, path]);
+  useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
     };
@@ -114,17 +119,29 @@ function Header() {
           </Reveal2>
         </motion.header>
       ) : (
-        <motion.header className="bg-transparent backdrop-blur-sm py-5  px-4 top-0 w-full left-0 fixed flex z-[999] justify-between items-center">
+        <motion.header
+          variants={{
+            visible: {
+              y: 0,
+            },
+            hidden: {
+              y: "-100%",
+            },
+          }}
+          animate={hidden ? "hidden" : "visible"}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="bg-transparent backdrop-blur-sm py-5  px-4 top-0 w-full left-0 fixed flex z-[999] justify-between items-center"
+        >
           <div className="rounded-3xl bg-white p-2 border border-gray-600">
             <h1 className="text-black text-sm font-mono">Ehtisham</h1>
           </div>
           <motion.button
             onClick={() => setButton((prev) => !prev)}
-            className=" rounded-full text-2xl active:scale-[1.2] transition-all duration-200 bg-white p-2 z-[999999]"
+            className=" rounded-full text-2xl active:scale-[1.2] transition-all duration-200 border border-gray-600 bg-white p-2 z-[999999]"
           >
             {!button ? <BsList /> : <BsXLg />}
           </motion.button>
-          <MobileNav button={button} />
+          <MobileNav button={button} hash={hash} path={path} />
         </motion.header>
       )}
     </>

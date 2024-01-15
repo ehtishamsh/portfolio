@@ -2,56 +2,66 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-function MobileNav({ button }: { button: boolean }) {
+function MobileNav({
+  button,
+  hash,
+  path,
+}: {
+  button: boolean;
+  hash: string;
+  path: string;
+}) {
+  console.log(path);
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, x: "100%" },
-        visible: { opacity: 1, x: "0%" },
+        hidden: { x: "100%", opacity: 0 },
+        visible: { x: "0%", opacity: 1 },
       }}
+      initial="hidden" // Set initial state to hidden
       animate={button ? "visible" : "hidden"}
       transition={{
-        type: "spring",
-        stiffness: 500,
-        damping: 30,
-        delay: 0.2,
+        type: "spring", // Use spring animation
+        stiffness: 260,
+        damping: 20,
+        duration: 1,
       }}
-      className="w-full flex justify-center  items-center  fixed top-0 left-0 h-screen text-white z-[99]"
-      style={{
-        background: "url('duck.jpg')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        objectFit: "contain",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-      }}
+      className="w-full flex justify-center items-center fixed top-0 left-0 h-screen text-white z-[99] bg-black"
     >
       <motion.div
-        className={`flex flex-col justify-center items-start w-full px-16 gap-10`}
+        className={`flex flex-col justify-center items-center  w-full px-16 gap-10`}
       >
         <Link
           href={"/"}
-          className="text-4xl font-extrabold underline-offset-4 underline hover:text-gray-200 active:text-gray-400 transition-all duration-300"
+          className={`${
+            path === "/" && hash === "" ? "text-gray-500" : "text-white"
+          } text-4xl hover:text-gray-200transition-all duration-300`}
         >
           Home
         </Link>
         <Link
-          href={"/"}
-          className="text-4xl font-extrabold underline-offset-4 underline hover:text-gray-200 active:text-gray-400 transition-all duration-300"
+          href={"/#skills"}
+          className={`${
+            hash === "skills" ? "text-gray-500" : "text-white"
+          } text-4xl hover:text-gray-200transition-all duration-300`}
         >
-          My Skills
+          Skills
         </Link>
         <Link
-          href={"/"}
-          className="text-4xl font-extrabold underline-offset-4 underline hover:text-gray-200 active:text-gray-400 transition-all duration-300"
+          href={"/#about"}
+          className={`${
+            hash === "about" ? "text-gray-500" : "text-white"
+          } text-4xl hover:text-gray-200transition-all duration-300`}
         >
           About Me
         </Link>
         <Link
-          href={"/"}
-          className="text-4xl font-extrabold underline-offset-4 underline hover:text-gray-200 active:text-gray-400 transition-all duration-300"
+          href={"/#projects"}
+          className={`${
+            hash === "projects" ? "text-gray-500" : "text-white"
+          } text-4xl hover:text-gray-200transition-all duration-300`}
         >
-          My Projects
+          Projects
         </Link>
       </motion.div>
     </motion.div>
