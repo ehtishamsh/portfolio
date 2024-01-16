@@ -33,7 +33,7 @@ function MobileNav({
         damping: 20,
         duration: 1,
       }}
-      className="w-full flex justify-center items-center fixed top-0 left-0 h-screen text-white z-[99] bg-black"
+      className="w-full flex justify-center h-svh items-center fixed top-0 left-0 text-white z-[99] bg-black"
     >
       <motion.div
         className={`flex flex-col justify-center items-center w-full px-16 gap-10`}
@@ -42,14 +42,20 @@ function MobileNav({
           <motion.div
             key={index}
             variants={{
-              hidden: { opacity: 0, x: "70%" },
-              visible: { opacity: 1, x: "0%" },
+              hidden: { opacity: 0, y: 50, x: "100%" },
+              visible: { opacity: 1, y: 0, x: "0%" },
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+              duration: 0.2,
             }}
           >
             <Link
               href={link.href}
               className={`${
-                (path === "/" && hash === "") || hash === link.hash
+                (path === link.href && hash === "") || hash === link.hash
                   ? "text-gray-500"
                   : "text-white"
               } text-4xl hover:text-gray-200 transition-all duration-300`}

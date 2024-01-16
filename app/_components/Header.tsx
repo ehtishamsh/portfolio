@@ -128,7 +128,7 @@ function Header() {
               y: "-100%",
             },
           }}
-          animate={hidden ? "hidden" : "visible"}
+          animate={!button && hidden ? "hidden" : "visible"}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="bg-transparent backdrop-blur-sm py-5 px-4 top-0 w-full left-0 fixed flex z-[999] justify-between items-center"
         >
@@ -137,8 +137,9 @@ function Header() {
           </div>
           <motion.button
             onClick={() => setButton((prev) => !prev)}
-            whileTap={{ rotate: 180, scale: 1.2 }}
-            transition={{ duration: 0.05, delay: 0.1 }}
+            initial={false}
+            animate={{ rotate: button ? 180 : 0, scale: button ? 1.2 : 1 }}
+            transition={{ duration: 0.05, delay: 0.05 }}
             className=" rounded-full text-2xl active:scale-[1.2] transition-all duration-200 border border-gray-600 bg-white p-2 z-[999999]"
           >
             {!button ? <BsList /> : <BsXLg />}
