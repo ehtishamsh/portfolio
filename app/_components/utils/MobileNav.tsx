@@ -2,6 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
+const links = [
+  { href: "/", text: "Home", hash: "" },
+  { href: "/#skills", text: "Skills", hash: "skills" },
+  { href: "/#about", text: "About Me", hash: "about" },
+  { href: "/#projects", text: "Projects", hash: "projects" },
+];
+
 function MobileNav({
   button,
   hash,
@@ -11,17 +19,16 @@ function MobileNav({
   hash: string;
   path: string;
 }) {
-  console.log(path);
   return (
     <motion.div
       variants={{
-        hidden: { x: "100%", opacity: 0 },
-        visible: { x: "0%", opacity: 1 },
+        hidden: { x: "100%", opacity: 0, transition: { duration: 0.2 } },
+        visible: { x: "0%", opacity: 1, transition: { staggerChildren: 0.3 } },
       }}
-      initial="hidden" // Set initial state to hidden
+      initial="hidden"
       animate={button ? "visible" : "hidden"}
       transition={{
-        type: "spring", // Use spring animation
+        type: "spring",
         stiffness: 260,
         damping: 20,
         duration: 1,
@@ -29,40 +36,28 @@ function MobileNav({
       className="w-full flex justify-center items-center fixed top-0 left-0 h-screen text-white z-[99] bg-black"
     >
       <motion.div
-        className={`flex flex-col justify-center items-center  w-full px-16 gap-10`}
+        className={`flex flex-col justify-center items-center w-full px-16 gap-10`}
       >
-        <Link
-          href={"/"}
-          className={`${
-            path === "/" && hash === "" ? "text-gray-500" : "text-white"
-          } text-4xl hover:text-gray-200transition-all duration-300`}
-        >
-          Home
-        </Link>
-        <Link
-          href={"/#skills"}
-          className={`${
-            hash === "skills" ? "text-gray-500" : "text-white"
-          } text-4xl hover:text-gray-200transition-all duration-300`}
-        >
-          Skills
-        </Link>
-        <Link
-          href={"/#about"}
-          className={`${
-            hash === "about" ? "text-gray-500" : "text-white"
-          } text-4xl hover:text-gray-200transition-all duration-300`}
-        >
-          About Me
-        </Link>
-        <Link
-          href={"/#projects"}
-          className={`${
-            hash === "projects" ? "text-gray-500" : "text-white"
-          } text-4xl hover:text-gray-200transition-all duration-300`}
-        >
-          Projects
-        </Link>
+        {links.map((link, index) => (
+          <motion.div
+            key={index}
+            variants={{
+              hidden: { opacity: 0, x: "70%" },
+              visible: { opacity: 1, x: "0%" },
+            }}
+          >
+            <Link
+              href={link.href}
+              className={`${
+                (path === "/" && hash === "") || hash === link.hash
+                  ? "text-gray-500"
+                  : "text-white"
+              } text-4xl hover:text-gray-200 transition-all duration-300`}
+            >
+              {link.text}
+            </Link>
+          </motion.div>
+        ))}
       </motion.div>
     </motion.div>
   );

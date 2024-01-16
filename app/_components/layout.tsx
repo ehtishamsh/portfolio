@@ -9,7 +9,7 @@ function Masterlayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4300);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);
