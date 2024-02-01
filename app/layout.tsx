@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-black !scroll-smooth cursor-none scroll-pt-2 select-none "
+      className="bg-black !scroll-smooth cursor-none scroll-pt-2 select-none"
     >
       <body className={sora.className}>
         <Masterlayout {...{ children }} />
