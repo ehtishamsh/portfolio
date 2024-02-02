@@ -18,9 +18,8 @@ function SingleProject() {
 
   const createElement = projectData.project_data.map((item) => {
     return (
-      <Reveal delayTime={1} width={"100%"}>
+      <Reveal delayTime={1} width={"100%"} key={item.id}>
         <motion.a
-          key={item.id}
           onHoverStart={() => setHover(true)}
           onHoverEnd={() => setHover(false)}
           target="_blank"
