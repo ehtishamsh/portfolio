@@ -58,7 +58,7 @@ function Skills() {
             className="absolute z-30 h-64 w-full p-2 overflow-hidden rounded-lg  select-none bg-white border-dashed border-2 border-slate-700 text-black"
           >
             <div style={{ maxWidth: "100%", wordWrap: "break-word" }}>
-              <p className="text-sm max-sm:[font-size:_10px_!important]">
+              <p className="text-sm max-sm:[font-size:_11px_!important]">
                 {item.history}
               </p>
             </div>
