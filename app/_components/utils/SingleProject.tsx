@@ -58,7 +58,7 @@ function SingleProject() {
             </h6>
             <p
               className={`text-xl max-lg:text-base max-sm:text-sm  mb-6 max-sm:mb-4 ${
-                hover ? "text-gray-600" : "text-gray-300  max-sm:text-gray-300"
+                hover ? "text-gray-600" : "text-gray-300  max-sm:text-gray-500"
               }`}
             >
               {item.description}
