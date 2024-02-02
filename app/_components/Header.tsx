@@ -104,6 +104,18 @@ function Header() {
                 </Reveal>
               </Link>
               <Link
+                href={"/#projects"}
+                className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
+                  hash === "projects"
+                    ? "text-black bg-white hover:text-gray-500"
+                    : "text-white hover:text-gray-300"
+                }`}
+              >
+                <Reveal center={true} delayTime={0.3} width="100%">
+                  PROJECTS
+                </Reveal>
+              </Link>
+              <Link
                 href={"/contact"}
                 className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
                   hash === "" && path === "/contact"
