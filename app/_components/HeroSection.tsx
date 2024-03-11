@@ -42,7 +42,7 @@ function HeroSection() {
               </Reveal>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/ahtishams.shah"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
@@ -50,7 +50,7 @@ function HeroSection() {
               </Reveal>
             </a>
             <a
-              href="#"
+              href="https://github.com/ehtishamsh"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
@@ -58,7 +58,7 @@ function HeroSection() {
               </Reveal>
             </a>
             <a
-              href="#"
+              href="https://github.com/ehtishamsh"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
@@ -66,7 +66,7 @@ function HeroSection() {
               </Reveal>
             </a>
             <a
-              href="#"
+              href="https://twitter.com/ssahtihsam"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2  border-black cursor-pointer max-md:p-2 justify-center items-center flex hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>

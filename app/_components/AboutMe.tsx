@@ -35,21 +35,19 @@ function AboutMe() {
             </h1>
           </Reveal>
           <Reveal delayTime={1} width="100%">
-            <p className="text-base max-lg:text-sm mb-2 text-justify z-30 text-gray-400">
+            <p className="text-base max-lg:text-sm mb-2 text-justify z-30 text-gray-500">
               {`   I'm a passionate, self-proclaimed designer who specializes in full
-            stack development (React.js & Node.js). I am very enthusiastic about
+            stack development (React.js, Next.js & Node.js). I am very enthusiastic about
             bringing the technical and visual aspects of digital products to
             life. User experience, pixel perfect design, and writing clear,
             readable, highly performant code matters to me.`}
             </p>
           </Reveal>
           <Reveal delayTime={1.2}>
-            <p className="text-base max-lg:text-sm text-pretty text-justify z-30 text-gray-400">
-              {`     I began my journey as a web developer in 2015, and since then, I've
+            <p className="text-base max-lg:text-sm text-pretty text-justify z-30 text-gray-500">
+              {`     I began my journey as a web developer in 2022, and since then, I've
             continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. Now,
-            in my early thirties, 7 years after starting my web development
-            journey, I'm building cutting-edge web applications using modern
+            challenges and learning the latest technologies along the way. I'm building cutting-edge web applications using modern
             technologies such as react.js,Next.js, TypeScript, Tailwindcss and
             much more.`}
             </p>
