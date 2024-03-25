@@ -74,7 +74,7 @@ function HeroSection() {
               </Reveal>
             </a>
             <a
-              href="https://twitter.com/ssahtihsam"
+              href="#"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2  border-black cursor-pointer max-md:p-2 justify-center items-center flex hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
