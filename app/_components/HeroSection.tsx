@@ -31,24 +31,18 @@ function HeroSection() {
                 <BsArrowRight className="z-30 text-2xl max-md:text-xl max-sm:text-sm" />
               </Reveal>
             </a>
-            <a
-              href="#"
+            <Link
+              href="https://drive.google.com/file/d/1YQQQfT_QIvEQsOSIxn3uUZPMB0Y3-6Xf/view?usp=sharing"
+              target="_blank"
               className="rounded-xl border-2 border-black bg-white p-3 gap-2 max-md:p-2 max-sm:gap-1 max-sm:text-xs  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2  flex justify-center items-center"
             >
               <Reveal delayTime={0.4}>
-                <p className="z-30">
-                  <Link
-                    href="https://drive.google.com/file/d/1YQQQfT_QIvEQsOSIxn3uUZPMB0Y3-6Xf/view?usp=sharing"
-                    target="_blank"
-                  >
-                    Download CV
-                  </Link>
-                </p>
+                <p className="z-30">Download CV</p>
               </Reveal>
               <Reveal delayTime={0.4}>
                 <BsDownload className="z-30 text-2xl max-md:text-xl max-sm:text-sm" />
               </Reveal>
-            </a>
+            </Link>
             <a
               href="https://www.facebook.com/ahtishams.shah"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
