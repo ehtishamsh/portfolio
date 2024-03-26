@@ -12,7 +12,7 @@ function MyTestimonials() {
           </h1>
         </Reveal>
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-3  items-center justify-center gap-12">
+          <div className="grid grid-cols-3  items-center max-sm:grid-cols-1 justify-center gap-7">
             <div className=" justify-center items-center flex ">
               <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-14 py-12 ">
                 <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-400">
@@ -30,24 +30,8 @@ function MyTestimonials() {
                 <h5 className="text-base font-semibold text-gray-600">
                   Ehtisham Shah
                 </h5>
-              </div>
-            </div>
-            <div className="  justify-center items-center flex">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-14 py-12 ">
-                <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-400">
-                  <img
-                    src="duck.jpg"
-                    className=" w-full h-full object-cover border border-gray-950"
-                    alt=""
-                  />
-                </div>
-                <p className="text-base text-gray-600 text-center">
-                  I recently had to jump on 10+ different calls across eight
-                  different countries to find the right owner.
-                </p>
-                <hr className="p-[2PX] bg-black w-[50%] rounded-md" />
-                <h5 className="text-base font-semibold text-gray-600">
-                  Ehtisham Shah
+                <h5 className="text-sm font-semibold text-gray-600">
+                  Upwork Client
                 </h5>
               </div>
             </div>
@@ -67,6 +51,33 @@ function MyTestimonials() {
                 <hr className="p-[2PX] bg-black w-[50%] rounded-md" />
                 <h5 className="text-base font-semibold text-gray-600">
                   Ehtisham Shah
+                </h5>
+
+                <h5 className="text-sm font-semibold text-gray-600">
+                  Upwork Client
+                </h5>
+              </div>
+            </div>
+            <div className="  justify-center items-center flex">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-14 py-12 ">
+                <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-400">
+                  <img
+                    src="duck.jpg"
+                    className=" w-full h-full object-cover border border-gray-950"
+                    alt=""
+                  />
+                </div>
+                <p className="text-base text-gray-600 text-center">
+                  I recently had to jump on 10+ different calls across eight
+                  different countries to find the right owner.
+                </p>
+                <hr className="p-[2PX] bg-black w-[50%] rounded-md" />
+                <h5 className="text-base font-semibold text-gray-600">
+                  Ehtisham Shah
+                </h5>
+
+                <h5 className="text-sm font-semibold text-gray-600">
+                  Upwork Client
                 </h5>
               </div>
             </div>
