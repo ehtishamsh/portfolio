@@ -4,6 +4,8 @@ import HeroSection from "./_components/HeroSection";
 import MySkills from "./_components/MySkills";
 import { PageWrapper } from "./pageWrapper";
 import Projects from "./_components/Projects";
+import ContactMe from "./_components/ContactMe";
+import MyTestimonials from "./_components/MyTestimonials";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <MySkills />
       <AboutMe />
       <Projects />
+      <MyTestimonials />
+      <ContactMe />
     </div>
   );
 }
