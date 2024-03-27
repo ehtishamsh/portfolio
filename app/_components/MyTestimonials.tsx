@@ -26,7 +26,7 @@ function MyTestimonials() {
                   I recently had to jump on 10+ different calls across eight
                   different countries to find the right owner.
                 </p>
-                <hr className="p-[2PX] bg-black w-[50%] rounded-md" />
+                <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
                 <h5 className="text-base font-semibold text-gray-600">
                   Ehtisham Shah
                 </h5>
@@ -48,7 +48,7 @@ function MyTestimonials() {
                   I recently had to jump on 10+ different calls across eight
                   different countries to find the right owner.
                 </p>
-                <hr className="p-[2PX] bg-black w-[50%] rounded-md" />
+                <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
                 <h5 className="text-base font-semibold text-gray-600">
                   Ehtisham Shah
                 </h5>
@@ -71,7 +71,7 @@ function MyTestimonials() {
                   I recently had to jump on 10+ different calls across eight
                   different countries to find the right owner.
                 </p>
-                <hr className="p-[2PX] bg-black w-[50%] rounded-md" />
+                <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
                 <h5 className="text-base font-semibold text-gray-600">
                   Ehtisham Shah
                 </h5>
