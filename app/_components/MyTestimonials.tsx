@@ -15,14 +15,14 @@ function MyTestimonials() {
         <div className="flex justify-center items-center">
           <div className="grid grid-cols-3  items-center max-sm:grid-cols-1 justify-center gap-7">
             <div className=" justify-center items-center flex ">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-14 py-12 ">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-12 py-8 ">
                 <div className="w-24 h-24  relative">
                   <img
-                    src="duck.jpg"
+                    src="testMan.png"
                     className=" w-full h-full  rounded-full object-cover border border-gray-950"
                     alt=""
                   />
-                  <PiQuotes className="text-2xl absolute -bottom-1 z-20 right-0" />
+                  <PiQuotes className="text-4xl bg-slate-200 text-gray-400 rounded-full p-1 absolute -bottom-3 z-20 -right-2" />
                 </div>
                 <p className="relative text-base text-gray-600 text-center">
                   {
