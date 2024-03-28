@@ -22,9 +22,9 @@ function MyTestimonials() {
                     className=" w-full h-full  rounded-full object-cover border border-gray-950"
                     alt=""
                   />
-                  <PiQuotes className="text-4xl bg-slate-200 text-gray-400 rounded-full p-1 absolute -bottom-3 z-20 -right-2" />
+                  <PiQuotes className="text-4xl bg-black text-white rounded-full p-1 absolute -bottom-3 z-20 -right-2" />
                 </div>
-                <p className="relative text-base text-gray-600 text-center">
+                <p className="relative text-base text-gray-600 text-center line-clamp-3">
                   {
                     " This was an elite experience  for all the quality you would look for in a timely professional and exceptional artist. I highly recommend! Ilook forward to working together in the future."
                   }
@@ -36,47 +36,45 @@ function MyTestimonials() {
                 </h5>
               </div>
             </div>
-            <div className="  justify-center items-center flex">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-14 py-12 ">
-                <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-400">
+            <div className=" justify-center items-center flex ">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-black border border-gray-800 rounded-2xl px-12 py-8 ">
+                <div className="w-24 h-24  relative">
                   <img
-                    src="duck.jpg"
-                    className=" w-full h-full object-cover border border-gray-950"
+                    src="testGirl.png"
+                    className=" w-full h-full  rounded-full object-cover border-2 border-gray-100"
                     alt=""
                   />
+                  <PiQuotes className="text-4xl bg-white text-black rounded-full p-1 absolute -bottom-3 z-20 -right-2" />
                 </div>
-                <p className="text-base text-gray-600 text-center">
-                  I recently had to jump on 10+ different calls across eight
-                  different countries to find the right owner.
+                <p className="relative text-base text-gray-100 text-center line-clamp-3">
+                  {
+                    " He did an excellent job. Great communication. Very quick and thoughtful work!."
+                  }
                 </p>
                 <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
-                <h5 className="text-base font-semibold text-gray-600">
-                  Afn Alen
-                </h5>
-
-                <h5 className="text-sm font-semibold text-gray-600">
+                <h5 className="text-base font-semibold text-gray-100">Nikki</h5>
+                <h5 className="text-sm font-semibold text-gray-100">
                   Upwork Client
                 </h5>
               </div>
             </div>
-            <div className="  justify-center items-center flex">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-14 py-12 ">
-                <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-400">
+            <div className=" justify-center items-center flex ">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-12 py-8 ">
+                <div className="w-24 h-24  relative">
                   <img
-                    src="duck.jpg"
-                    className=" w-full h-full object-cover border border-gray-950"
+                    src="testMan.png"
+                    className=" w-full h-full  rounded-full object-cover border border-gray-950"
                     alt=""
                   />
+                  <PiQuotes className="text-4xl bg-black text-white rounded-full p-1 absolute -bottom-3 z-20 -right-2" />
                 </div>
-                <p className="text-base text-gray-600 text-center">
-                  I recently had to jump on 10+ different calls across eight
-                  different countries to find the right owner.
+                <p className="relative text-base text-gray-200 text-center line-clamp-3">
+                  {
+                    " This was an elite experience  for all the quality you would look for in a timely professional and exceptional artist. I highly recommend! Ilook forward to working together in the future."
+                  }
                 </p>
                 <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
-                <h5 className="text-base font-semibold text-gray-600">
-                  Ehtisham Shah
-                </h5>
-
+                <h5 className="text-base font-semibold text-gray-600">Ray</h5>
                 <h5 className="text-sm font-semibold text-gray-600">
                   Upwork Client
                 </h5>
