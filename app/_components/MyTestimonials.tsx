@@ -12,10 +12,10 @@ function MyTestimonials() {
             My <span className="font-extrabold">Testimonials</span>
           </h1>
         </Reveal>
-        <div className="flex justify-center items-center">
-          <div className="grid grid-cols-3  items-center max-sm:grid-cols-1 justify-center gap-7">
+        <div className="flex justify-center items-center max-md:mt-12">
+          <div className="grid grid-cols-3  items-center max-sm:grid-cols-1  justify-center gap-7">
             <div className=" justify-center items-center flex ">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-12 py-8 ">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-12 py-8 max-sm:px-8 max-sm:py-6 ">
                 <div className="w-24 h-24  relative">
                   <img
                     src="testMan.png"
@@ -37,7 +37,7 @@ function MyTestimonials() {
               </div>
             </div>
             <div className=" justify-center items-center flex ">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-black border border-gray-800 rounded-2xl px-12 py-8 ">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-black border border-gray-800 rounded-2xl px-12 py-8 max-sm:px-8 max-sm:py-6 ">
                 <div className="w-24 h-24  relative">
                   <img
                     src="testGirl.png"
@@ -59,7 +59,7 @@ function MyTestimonials() {
               </div>
             </div>
             <div className=" justify-center items-center flex ">
-              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-12 py-8 ">
+              <div className="flex flex-col justify-center items-center gap-6 w-[90%] bg-white rounded-2xl px-12 py-8 max-sm:px-8 max-sm:py-6 ">
                 <div className="w-24 h-24  relative">
                   <img
                     src="testMan.png"
@@ -68,7 +68,7 @@ function MyTestimonials() {
                   />
                   <PiQuotes className="text-4xl bg-black text-white rounded-full p-1 absolute -bottom-3 z-20 -right-2" />
                 </div>
-                <p className="relative text-base text-gray-200 text-center line-clamp-3">
+                <p className="relative text-base text-gray-600 text-center line-clamp-3">
                   {
                     " This was an elite experience  for all the quality you would look for in a timely professional and exceptional artist. I highly recommend! Ilook forward to working together in the future."
                   }
