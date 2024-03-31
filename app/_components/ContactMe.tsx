@@ -9,31 +9,38 @@ function ContactMe() {
         <div className="grid grid-cols-2 gap-28 max-sm:gap-12 max-md:grid-cols-1 px-5">
           <div>
             <form
-              action=""
+              action="https://formsubmit.co/ahtithehero@gmail.com"
+              method="POST"
               className="flex justify-center items-center gap-7 flex-col"
             >
               <input
                 type="text"
                 className="border-2 border-gray-800 rounded p-2 text-sm w-full "
                 placeholder="Name"
+                name="name"
               />
               <input
                 type="text"
                 className="border-2 border-gray-800 rounded p-2 text-sm w-full "
                 placeholder="Email"
+                name="email"
               />
               <textarea
                 rows={5}
                 className="border-2 border-gray-800 rounded p-2 text-sm w-full "
                 placeholder="How can I help you?"
+                name="message"
               />
-              <button className="border-2 border-gray-800 rounded-md p-2 text-sm w-full  bg-black text-white">
+              <button
+                type="submit"
+                className="border-2 border-gray-800 rounded-md p-2 text-sm w-full  bg-black text-white"
+              >
                 Get In Touch
               </button>
             </form>
           </div>
           <div className="flex justify-center w-full flex-col max-sm:-order-1">
-            <h1 className="text-5xl max-sm:text-4xl font-bold mb-6">
+            <h1 className="text-6xl max-sm:text-4xl tracking-tight leading-none font-bold mb-6">
               Let's <span className="outline-title">talk</span> for <br />
               Something special
             </h1>
