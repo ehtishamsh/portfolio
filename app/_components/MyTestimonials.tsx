@@ -51,36 +51,38 @@ const testimonials: Testi[] = [
 
 function MyTestimonials() {
   const getTesti = testimonials.map((testimonial: Testi, index: number) => (
-    <Reveal>
-      <div className="justify-center items-center flex" key={index}>
-        <div
-          className={`flex flex-col justify-center items-center gap-6 w-[90%] ${testimonial.backgroundColor} rounded-2xl px-12 py-8 max-sm:px-8 max-sm:py-6 border ${testimonial.borderColor}`}
-        >
-          <div className="w-24 h-24 relative">
-            <img
-              src={testimonial.image}
-              className="w-full h-full rounded-full object-cover border border-gray-950"
-              alt=""
-            />
-            <PiQuotes
-              className={`text-4xl ${testimonial.IconColor}  rounded-full p-1 absolute -bottom-3 z-20 -right-2`}
-            />
-          </div>
-          <p
-            className={`relative text-base ${testimonial.textColor} text-center line-clamp-3`}
+    <div key={index}>
+      <Reveal>
+        <div className="justify-center items-center flex">
+          <div
+            className={`flex flex-col justify-center items-center gap-6 w-[90%] ${testimonial.backgroundColor} rounded-2xl px-12 py-8 max-sm:px-8 max-sm:py-6 border ${testimonial.borderColor}`}
           >
-            {testimonial.quote}
-          </p>
-          <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
-          <h5 className={`text-base font-semibold ${testimonial.textColor}`}>
-            {testimonial.name}
-          </h5>
-          <h5 className={`text-sm font-semibold ${testimonial.textColor}`}>
-            {testimonial.role}
-          </h5>
+            <div className="w-24 h-24 relative">
+              <img
+                src={testimonial.image}
+                className="w-full h-full rounded-full object-cover border border-gray-950"
+                alt=""
+              />
+              <PiQuotes
+                className={`text-4xl ${testimonial.IconColor}  rounded-full p-1 absolute -bottom-3 z-20 -right-2`}
+              />
+            </div>
+            <p
+              className={`relative text-base ${testimonial.textColor} text-center line-clamp-3`}
+            >
+              {testimonial.quote}
+            </p>
+            <hr className="p-[1.5px] bg-black w-[50%] rounded-md" />
+            <h5 className={`text-base font-semibold ${testimonial.textColor}`}>
+              {testimonial.name}
+            </h5>
+            <h5 className={`text-sm font-semibold ${testimonial.textColor}`}>
+              {testimonial.role}
+            </h5>
+          </div>
         </div>
-      </div>
-    </Reveal>
+      </Reveal>{" "}
+    </div>
   ));
 
   return (

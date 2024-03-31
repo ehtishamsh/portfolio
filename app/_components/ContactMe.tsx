@@ -41,7 +41,7 @@ function ContactMe() {
           </div>
           <div className="flex justify-center w-full flex-col max-sm:-order-1">
             <h1 className="text-6xl max-sm:text-5xl tracking-tight leading-none font-bold mb-6">
-              Let's <span className="outline-title">talk</span> for <br />
+              {"Let's "} <span className="outline-title">talk</span> for <br />
               Something special
             </h1>
             <p className="text-base text-gray-600 max-sm:text-sm">
