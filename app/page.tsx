@@ -6,6 +6,7 @@ import { PageWrapper } from "./pageWrapper";
 import Projects from "./_components/Projects";
 import ContactMe from "./_components/ContactMe";
 import MyTestimonials from "./_components/MyTestimonials";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects />
       <MyTestimonials />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

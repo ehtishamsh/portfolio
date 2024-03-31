@@ -116,7 +116,7 @@ function Header() {
                 </Reveal>
               </Link>
               <Link
-                href={"/contact"}
+                href={"/#contact"}
                 className={`w-1/3 transition-all duration-500 rounded-3xl text-sm py-3  text-center px-2 ${
                   hash === "" && path === "/contact"
                     ? "text-black bg-white hover:text-gray-500"

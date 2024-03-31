@@ -8,6 +8,7 @@ const links = [
   { href: "/#skills", text: "Skills", hash: "skills" },
   { href: "/#about", text: "About Me", hash: "about" },
   { href: "/#projects", text: "Projects", hash: "projects" },
+  { href: "/#contact", text: "Contact", hash: "contact" },
 ];
 
 function MobileNav({

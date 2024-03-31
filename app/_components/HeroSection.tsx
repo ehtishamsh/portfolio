@@ -21,7 +21,7 @@ function HeroSection() {
           </Reveal>
           <div className="grid grid-cols-4 gap-6 max-sm:gap-2 max-sm:px-4 justify-between pt-5 max-xl:pt-5 max-lg:grid max-lg:grid-cols-4">
             <a
-              href="#"
+              href="#contact"
               className="rounded-xl border-2 border-black bg-white p-3 gap-2 text-black max-md:p-2 max-sm:gap-1 max-sm:text-xs   transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none col-span-2 flex justify-center items-center"
             >
               <Reveal delayTime={0.4}>
@@ -60,7 +60,7 @@ function HeroSection() {
               </Reveal>
             </a>
             <a
-              href="https://github.com/ehtishamsh"
+              href="https://www.linkedin.com/in/ehtishamshah"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>

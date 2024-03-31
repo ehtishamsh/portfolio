@@ -4,7 +4,7 @@ import { Reveal } from "./_animation/Reveal";
 
 function ContactMe() {
   return (
-    <div className="bg-white py-14 mt-20 max-sm:py-8 max-sm:mt-12">
+    <div id="contact" className="bg-white py-14 mt-20 max-sm:py-8 max-sm:mt-12">
       <div className=" max-w-7xl mx-auto  px-10 py-8  max-sm:px-4 max-sm:py-8 max-xxxxs:py-3   relative  ">
         <div className="grid grid-cols-2 gap-28 max-sm:gap-12 max-md:grid-cols-1 px-5">
           <div>
@@ -40,7 +40,7 @@ function ContactMe() {
             </form>
           </div>
           <div className="flex justify-center w-full flex-col max-sm:-order-1">
-            <h1 className="text-6xl max-sm:text-4xl tracking-tight leading-none font-bold mb-6">
+            <h1 className="text-6xl max-sm:text-5xl tracking-tight leading-none font-bold mb-6">
               Let's <span className="outline-title">talk</span> for <br />
               Something special
             </h1>
