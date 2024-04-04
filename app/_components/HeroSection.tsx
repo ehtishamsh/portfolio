@@ -44,7 +44,7 @@ function HeroSection() {
               </Reveal>
             </Link>
             <a
-              href="https://www.facebook.com/ahtishams.shah"
+              href="#"
               className="p-3 max-sm:px-1 max-sm:py-2 bg-white border-2 flex justify-center max-md:p-2 items-center border-black cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black rounded-lg"
             >
               <Reveal delayTime={0.4}>
