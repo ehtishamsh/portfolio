@@ -14,7 +14,7 @@ This is a personal portfolio website built using Next.js, TypeScript, Framer Mot
 1. **Clone the repository**:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ehtishamsh/portfolio
 ```
 
 2. **Install dependencies**:
