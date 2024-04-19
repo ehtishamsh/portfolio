@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio
+
+This is a personal portfolio website built using Next.js, TypeScript, Framer Motion, and Tailwind CSS.
+
+## Features
+
+- **Next.js**: Utilizes the power of Next.js for server-side rendering, routing, and more.
+- **TypeScript**: Written in TypeScript for enhanced type safety and developer experience.
+- **Framer Motion**: Adds smooth animations and transitions to enhance user experience.
+- **Tailwind CSS**: Styled using Tailwind CSS for rapid development and easy customization.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository**:
+
+```bash
+git clone <repository-url>
+```
+
+2. **Install dependencies**:
+
+```bash
+cd personal-portfolio
+npm install
+# or
+yarn install
+```
+
+3. **Run the development server**:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to customize the portfolio according to your preferences. You can modify the content, styles, and animations easily.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+You can deploy the portfolio to platforms like Vercel, Netlify, or any other hosting provider that supports Next.js applications.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This portfolio template is created by [Your Name] and is open-source. Contributions and feedback are welcome!
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the [MIT License](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to adjust the content according to your specific project details and preferences!
